@@ -99,9 +99,10 @@ form .input {
     margin-bottom: 10px;
     background: transparent;
     outline: none;
-    color: var(--highlight);
-    background: var(--darker);
+    color: #fff;
+    background: var(--lighter);
     border-radius: 8px;
+    height: 42px;
 }
 .CardField--ltr .CardBrandIcon-container {
     right: 0;
