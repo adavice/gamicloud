@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'Montserrat Bold';
-	src: url("../fonts/Nunito-Bold.ttf") format('truetype');
+	font-family: 'RobotoCondensed-Regular';
+	src: url("../fonts/RobotoCondensed-Regular.ttf") format('truetype');
 }
 
 @font-face {
-	font-family: 'Montserrat ExtraBold';
-	src: url("../fonts/Nunito-ExtraBold.ttf") format('truetype');
+	font-family: 'RobotoCondensed-Bold';
+	src: url("../fonts/RobotoCondensed-Bold.ttf") format('truetype');
 }
 
 :root {
 	--primary: #151c2f;
-	--secondary: #959cbb;
+	--secondary: #dae0fb;
 	--darker: linear-gradient(110.65deg, rgb(88 73 132 / 50%) 1.16%, rgb(88 73 132 / 20%) 100%), linear-gradient(112.91deg, rgb(88 73 132 / 50%) 3.51%, rgb(88 73 132 / 0%) 111.71%);
 	--highlight: #b399ff;
 	--high_inactive: #584984;
@@ -26,7 +26,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: var(--primary);
-	font-family: 'Montserrat Bold', sans-serif;
+	font-family: 'RobotoCondensed-Regular', sans-serif;
 }
 
 a {
@@ -107,14 +107,14 @@ a[href^=tel] {
 	text-align: center;
 	color: var(--highlight);
 	padding: 6px 0;
-	font-family: Arial;
+	font-family: 'RobotoCondensed-Regular', sans-serif;
 	background: linear-gradient(110.65deg, rgb(88 73 132 / 50%) 1.16%, rgb(88 73 132 / 20%) 100%), linear-gradient(112.91deg, rgb(88 73 132 / 50%) 3.51%, rgb(88 73 132 / 0%) 111.71%);
 	backdrop-filter: blur(10px);
 	border: none;
 }
 
 #warning a {
-	font-family: 'Montserrat Bold', sans-serif;
+	font-family: 'RobotoCondensed-Regular', sans-serif;
 	color: var(--secondary);
 }
 
@@ -160,7 +160,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: 'Montserrat ExtraBold', sans-serif;
+	font-family: 'RobotoCondensed-Bold', sans-serif;
 }
 
 h1,
@@ -691,6 +691,13 @@ h3 {
 	font-size: 40px;
 	color: var(--main-text);
 	margin-bottom: 40px;
+	text-align: left;
+    border-left: 5px solid var(--high_inactive);
+    padding-left: 30px;
+}
+
+.about-agileinfo.transparent h2{
+	max-width: 100% !important;
 }
 
 .gallery-grids {
@@ -793,7 +800,7 @@ h3 {
 	max-width: 220px;
 	text-align: center;
 	box-shadow: 0 5px 5px #00000033;
-	font-family: "Montserrat ExtraBold", sans-serif;
+	font-family: 'RobotoCondensed-Bold', sans-serif;
 	min-width: 190px;
 }
 
@@ -864,8 +871,9 @@ form .row {
     border: 1.76px solid;
     border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
     backdrop-filter: blur(10px);
-	color: var(--main-text);
+	color: #fff !important;
 }
+
 
 .button:hover {
 	background: var(--highlight);
@@ -1040,7 +1048,7 @@ h3.game_title {
 }
 
 .service-grid-agileits a {
-	font-family: 'Montserrat ExtraBold', sans-serif;
+	font-family: 'RobotoCondensed-Bold', sans-serif;
 	color: var(--main-text);
 	border: 2px solid var(--main-text);
 	font-size: 15px;
@@ -1130,7 +1138,7 @@ h3.game_title {
 	padding: 40px;
 	margin: 0 20px 0px 0px;
 	border-radius: 10px;
-	font-family: "Montserrat ExtraBold";
+	font-family: 'RobotoCondensed-Bold', sans-serif;
 	font-size: 24px;
 	text-transform: uppercase;
 	text-align: left;
@@ -1148,7 +1156,7 @@ h3.game_title {
 	color: var(--primary);
 	padding: 29px;
 	text-transform: uppercase;
-	font-family: 'Montserrat ExtraBold';
+	font-family: 'RobotoCondensed-Bold';
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1178,6 +1186,8 @@ h3.game_title {
 	font-size: 70px;
 	text-transform: uppercase;
 	text-align: left;
+	border: none;
+    padding: 0;
 }
 
 a.learn {
@@ -1242,7 +1252,7 @@ a.learn:hover {
 .footer .links a {
 	color: var(--main-text);
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'RobotoCondensed-Regular', sans-serif;
 	padding-left: 7px;
 	padding-right: 7px;
 	text-decoration: none;
@@ -1454,6 +1464,13 @@ input::-webkit-inner-spin-button {
 	margin-right: auto;
 	float: none;
 	color: var(--highlight);
+}
+
+.profile_page h2 {
+	max-width: 640px;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile_page h3,
@@ -1871,7 +1888,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /*-- team --*/
 .team-ltpwrlayouts {
-	background: var(--darker);
+	/*background: var(--darker);*/
 }
 
 .ltpwrl_team_grid h4 {
@@ -2266,12 +2283,12 @@ p.agileits {
 	font-size: 1.1em;
 	margin-right: 27px;
 	vertical-align: middle;
-	color: #777;
+	color: var(--main-text);
 	list-style: none;
 }
 
 .item_info ul li a {
-	color: #777;
+	color: var(--main-text);
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -2326,7 +2343,7 @@ form .form-hint b {
 
 
 .navbar-default .navbar-nav>li>a {
-	font-family: "Montserrat ExtraBold", sans-serif;
+	font-family: 'RobotoCondensed-Bold', sans-serif;
 	font-size: 24px;
 	text-shadow: 0 1px 10px #0009;
 	color: var(--highlight);
@@ -2473,8 +2490,20 @@ a.blog-read:hover {
 	font-weight: 600;
 }
 
-::placeholder {
-	color: var(--secondary);
+::placeholder{
+    color: #dae0fb !important;
+}
+
+::-webkit-input-placeholder {
+    color: #dae0fb !important;
+}
+
+:-moz-placeholder {
+    color: #dae0fb !important;
+}
+
+::-moz-placeholder {
+    color: #dae0fb !important;
 }
 
 .contact-right-ltpwr input::placeholder,
@@ -2725,7 +2754,7 @@ select {
 	background: var(--lighter);
 	outline: none;
 	border-radius: 8px;
-	color: #fff;
+	color: var(--secondary);
 }
 
 .agileits_reply input[name="expMonth"],
@@ -3185,8 +3214,11 @@ li>a {
 	min-height: 444px
 }
 
-#faq h2 {
-	margin-bottom: 0;
+#faq h2, #about h2 {
+	max-width: 640px;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #faq h4 {
@@ -3796,7 +3828,7 @@ textarea#message {
 
 	.view h4 {
 		font-size: 1.8em;
-		font-family: "Montserrat ExtraBold", sans-serif;
+		font-family: 'RobotoCondensed-Bold', sans-serif;
 	}
 
 	.view p {
@@ -4728,7 +4760,7 @@ textarea#message {
 
 	}
 
-	.container h2.monsterHeader {
+	.container h2.monsterHeader, h2 {
 		font-size: 32px;
 		text-transform: uppercase;
 		margin-bottom: 25px;

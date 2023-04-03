@@ -99,7 +99,7 @@ form .input {
     margin-bottom: 10px;
     background: transparent;
     outline: none;
-    color: #fff;
+    color: #dae0fb;
     background: var(--lighter);
     border-radius: 8px;
     height: 42px;
@@ -136,5 +136,25 @@ select:-webkit-autofill:focus {
     z-index: 30;
 }
 ::-webkit-input-placeholder {
-    color: var(--secondary)!important;
+    color: #dae0fb !important;
+}
+
+:-moz-placeholder {
+    color: #dae0fb !important;
+}
+
+::-moz-placeholder {
+    color: #dae0fb !important;
+}
+
+#cardName::-webkit-input-placeholder {
+    color: #dae0fb !important;
+}
+
+#cardName:-moz-placeholder {
+    color: #dae0fb !important;
+}
+
+#cardName::-moz-placeholder {
+    color: #dae0fb !important;
 }

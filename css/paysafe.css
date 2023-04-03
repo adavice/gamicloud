@@ -117,7 +117,7 @@ form .input {
     margin-bottom: 10px;
     background: transparent;
     outline: none;
-    color: #fff;
+    color: #dae0fb;
     background: var(--lighter);
     border-radius: 8px;
     height: 40px;
@@ -126,6 +126,7 @@ form .input {
 input#cardName {
     font-family: robotoregular, Helvetica, Arial, sans-serif;
 }
+
 
 .CardField--ltr .CardBrandIcon-container {
     right: 0;
@@ -166,16 +167,17 @@ select:-webkit-autofill:focus {
 }
 
 ::-webkit-input-placeholder {
-    color: #5f6062 !important;
+    color: #dae0fb !important;
 }
 
 :-moz-placeholder {
-    color: #5f6062 !important;
+    color: #dae0fb !important;
 }
 
 ::-moz-placeholder {
-    color: #5f6062 !important;
+    color: #dae0fb !important;
 }
+
 
 #card-expiry span.glyphicon.glyphicon-question-sign,
 #card-cvc span.glyphicon.glyphicon-question-sign{
