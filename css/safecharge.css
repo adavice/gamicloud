@@ -112,7 +112,7 @@ form .input {
 }
 form label { margin: 0 0 5px 0; color: var(--bright)}
 #cardName::placeholder {
-    color: var(--primary)!important;
+    color: #dae0fb !important;
 }
 .SfcField--webkit-autofill {
 color: #fff;
