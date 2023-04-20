@@ -117,7 +117,7 @@ form .input {
     background: transparent;
     outline: none;
     color: #dae0fb;
-    background: var(--secondary);
+    background: #8e97c0 !important;
     border-radius: 8px;
     height: 42px;
 }
