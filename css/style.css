@@ -5371,3 +5371,19 @@ textarea#message {
 	width: 70px;
 	margin-top: 20px;
 }
+
+select option{
+	background: var(--primary) !important;
+}
+
+::-webkit-input-placeholder {
+    color: #dae0fb !important;
+}
+
+:-moz-placeholder {
+    color: #dae0fb !important;
+}
+
+::-moz-placeholder {
+    color: #dae0fb !important;
+}
