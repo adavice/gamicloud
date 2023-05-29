@@ -538,20 +538,20 @@ ul.callbacks_tabs.callbacks1_tabs {
 	max-width: 280px;
 	width: 100%;
 	background: var(--dark_gradient);
-    border: 1.76px solid;
-    border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+	border: 1.76px solid;
+	border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
 }
 
 form .btn-primary {
 	margin-top: 20px;
 	max-width: 315px;
 	background: var(--dark_gradient);
-    border: 1.76px solid;
-    border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+	border: 1.76px solid;
+	border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
 }
 
 form label {
@@ -584,7 +584,7 @@ form .row {
 .form-control {
 	height: 40px;
 	background-color: transparent;
-    border: 1px solid var(--bright);
+	border: 1px solid var(--bright);
 	color: var(--secondary);
 }
 
@@ -1131,11 +1131,11 @@ input::-webkit-inner-spin-button {
 }
 
 .button.btn-secondary {
-    background: var(--dark_gradient);
-    border: 1.76px solid;
-    border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+	background: var(--dark_gradient);
+	border: 1.76px solid;
+	border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
 }
 
 .contact-agileinfo {
@@ -1830,13 +1830,22 @@ p.agileits {
 /*--events--*/
 .events-left-agile-agileits-ltpwrlayouts {
 	background: url(../images/e1.jpg) no-repeat 0px 0px;
+	width: 100%;
 	background-size: cover;
 	min-height: 400px;
 	padding: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-blend-mode: darken;
 }
 
 .events-right-agile {
 	padding: 0;
+	display: none;
 }
 
 .events-text-ltpwr-agile {
@@ -2334,8 +2343,8 @@ select {
 	width: 100%;
 	padding: 10px;
 	background-color: transparent;
-    border: 1px solid var(--bright);
-    color: var(--main-text);
+	border: 1px solid var(--bright);
+	color: var(--main-text);
 	margin-bottom: 10px;
 	outline: none;
 	border-radius: 5px;
@@ -2391,10 +2400,10 @@ select:focus {
 	padding: 10px 35px;
 	color: var(--secondary);
 	background: var(--dark_gradient);
-    border: 1.76px solid;
-    border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+	border: 1.76px solid;
+	border-image-source: linear-gradient(110.65deg, rgb(88 73 132 / 51%) 1.16%, rgb(90 74 134 / 76%) 100%);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
 	outline: none;
 	min-width: 200px;
 
@@ -3394,7 +3403,7 @@ li>a {
 		padding: 0 10px;
 	}
 
-	.about_block .ltpwrl_team_grid{
+	.about_block .ltpwrl_team_grid {
 		width: 100%;
 	}
 
@@ -4788,17 +4797,17 @@ li>a {
 }
 
 ::-webkit-input-placeholder {
-    color: var(--main-text) !important;
+	color: var(--main-text) !important;
 }
 
 :-moz-placeholder {
-    color: var(--main-text) !important;
+	color: var(--main-text) !important;
 }
 
 ::-moz-placeholder {
-    color: var(--main-text) !important;
+	color: var(--main-text) !important;
 }
 
-form .input{
+form .input {
 	border: 1px solid var(--bright) !important;
 }
