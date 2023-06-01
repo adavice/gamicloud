@@ -861,7 +861,9 @@ h3.game_title {
 
 /*-- services bottom --*/
 .services-bottom-ltpwr-agileits {
-	background: url(../images/sbbg.jpg) no-repeat 0px 0px;
+	background: url(../images/gamicloud_sbbg.jpg) no-repeat 0px 0px;
+	background-color: #151c2f80;
+    background-blend-mode: overlay;
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
