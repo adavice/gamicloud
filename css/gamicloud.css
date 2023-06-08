@@ -863,7 +863,7 @@ h3.game_title {
 .services-bottom-ltpwr-agileits {
 	background: url(../images/gamicloud_sbbg.jpg) no-repeat 0px 0px;
 	background-color: #151c2f80;
-    background-blend-mode: overlay;
+	background-blend-mode: overlay;
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -3710,6 +3710,10 @@ li>a {
 	.services-bottom-ltpwr-agileits {
 		min-height: 325px;
 		padding: 85px 0px;
+		background: url(../images/gamicloud_sbbg_mb.jpg) no-repeat 0px 0px;
+		background-color: #151c2f80;
+		background-blend-mode: overlay;
+		background-size: cover;
 	}
 
 	.collection-left {
@@ -4299,6 +4303,8 @@ li>a {
 		width: 100%;
 		float: left;
 		min-height: 310px;
+		background: url(../images/gamicloud_e1_mb.jpg) no-repeat 0px 0px;
+		background-size: cover;
 	}
 
 	.events-text1 p {
