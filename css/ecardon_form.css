@@ -28,7 +28,7 @@ div.wpwl-group-brand {
     background-image: url(https://oppwa.com/v1/paymentWidgets/img/brand.png);
 }
 .wpwl-brand-MASTER {
-    background-position: 0 4071px;
+    background-position: 0 4072px;
     max-width: 50px;
     height: 30px;
 }
@@ -111,4 +111,9 @@ div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.c
         margin-top: 20px;
         padding: 0 10px;
     }
+}
+
+.wpwl-brand-card.wpwl-brand-custom.wpwl-brand-VISA{
+    width: 79px;
+    height: 39px;
 }

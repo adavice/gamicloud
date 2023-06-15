@@ -19,7 +19,6 @@
     <!-- css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/gamicloud.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/ecardon_form.css" rel="stylesheet" type="text/css"/>
     <!--// css -->
     <!-- font -->
 
@@ -51,18 +50,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  href="gamicloud_index.html" class="logo"><img src="./images/gamicloud_logo.png" alt=""></a>
+                <a  href="index.html" class="logo"><img src="./images/gamicloud_logo.png" alt=""></a>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hover-effect"><a href="gamicloud_index.html">Home</a></li>
-                    <li class="hover-effect"><a href="gamicloud_about.html">About</a></li>
-                    <li class="hover-effect"><a href="gamicloud_games.html">Games</a></li>
-                    <li class="hover-effect"><a href="gamicloud_news.html">News</a></li>
-                    <li class="hover-effect active"><a href="gamicloud_contactus.html">Contact</a></li>
-                    <li class="hover-effect"><a href="gamicloud_cancel.html">Cancel subscription</a></li>
-						<li ><a class="hover-effect" id="profile" href="./gamicloud_profile.html"><?xml version="1.0" encoding="iso-8859-1"?>
+                    <li class="hover-effect"><a href="index.html">Home</a></li>
+                    <li class="hover-effect"><a href="about.html">About</a></li>
+                    <li class="hover-effect"><a href="games.html">Games</a></li>
+                    <li class="hover-effect"><a href="news.html">News</a></li>
+                    <li class="hover-effect active"><a href="contactus.html">Contact</a></li>
+						<li ><a class="hover-effect" id="profile" href="./profile.html"><?xml version="1.0" encoding="iso-8859-1"?>
 							<svg class="desk_only" version="1.1" fill="var(--bright)" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 								 viewBox="0 0 478.024 478.024" style="enable-background:new 0 0 478.024 478.024; " xml:space="preserve">
                      <defs>
@@ -114,8 +112,8 @@
 						<span class="mob_only">Profile</span>
 						</a>
 							<ul id="sub_menu">
-							<li><a href="./gamicloud_login.html">Login</a></li>
-								<li><a href="./gamicloud_signup.html">Sign Up</a></li>
+							<li><a href="./login.html">Login</a></li>
+								<li><a href="./signup.html">Sign Up</a></li>
 							</ul>
 						</li>
                 </ul>
@@ -141,7 +139,7 @@
             <span>Enjoy our services</span>
         </div>
     </div>
-    <div class="blog">
+<div class="blog">
         <div class="col-md-7 wthree_blog_left">
 
             <div class="agileits_reply">
@@ -160,39 +158,21 @@
                 <div class="error-holder">
                     <span id="cc_form_error"></span>
                 </div>
-                <script src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=3154DA4FFF05E74F472573B6B77C93C3.uat01-vm-tx02"></script>
-                <script>
-                    var wpwlOptions = {
-                        style: "plain",
-                        billingAddress: {
-                            country: "US",
-                            state: "NY",
-                            city: "New York",
-                            street1: "111 6th Avenu",
-                            street2: "",
-                            postcode: "12312"
-                        },
-                        forceCardHolderEqualsBillingName: true,
-                        showCVVHint: true,
-                        brandDetection: true,
-                        onReady: function(){
-                            $(".wpwl-group-cardNumber").after($(".wpwl-group-brand").detach());
-                            $(".wpwl-group-cvv").after( $(".wpwl-group-cardHolder").detach());
-                            var visa = $(".wpwl-brand:first").clone().removeAttr("class").attr("class", "wpwl-brand-card wpwl-brand-custom wpwl-brand-VISA")
-                            var master = $(visa).clone().removeClass("wpwl-brand-VISA").addClass("wpwl-brand-MASTER");
-                            $(".wpwl-brand:first").after( $(master)).after( $(visa));
-                        },
-                        onChangeBrand: function(e){
-                            $(".wpwl-brand-custom").css("opacity", "0.3");
-                            $(".wpwl-brand-" + e).css("opacity", "1");
-                        }
-                    }
-
-                </script>
-                <form action="https://ecardon.docs.oppwa.com/tutorials/integration-guide/customisation" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>
+                <form method="post" class="cardForm">
+                    <span><input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required=""></span>
+                    <span><input type="text" id="cardName" name="cardName" placeholder="Name on Card" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img
+                            src="./images/cardTip2.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="expMonth" maxlength="2" name="expMonth" placeholder="Exp. Month" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipLeft"><img
+                            src="./images/cardTip1.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="expYear" maxlength="2" name="expYear" placeholder="Exp. Year" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip "><img
+                            src="./images/cardTip1.jpg" alt=""></div></span></span>
+                    <span><input type="text" id="cvv2" name="cvv2" placeholder="CVV2" required=""><span class="glyphicon glyphicon-question-sign"><div class="cardTip tipRight"><img
+                            src="./images/cardTip3.jpg" alt=""></div></span></span>
+                    <span class="form-hint">Authentication charge: <b>TOTAL OF 1 EUR</b> (will be refunded back to you)</span>
+                    <span class="form-hint2">The transaction will appear as gamicloud.com on your credit card bill</span>
+                <input class="button" type="submit" value="Pay">
+            </form>
             </div>
-
-<!--            test form deeds to be deleted-->
 
 
 
@@ -205,32 +185,37 @@
         </div>
         <div class="col-md-5 wthree_blog_right">
 
-            <div class="ltpwragile_flickr_posts">
+        <div class="ltpwragile_flickr_posts">
 
-                <div class="ltpwragile_flickr_post_left payment">
-                    <div class="extraCard">
-                        <img class="joystick" src="./images/joystick.svg" alt="">
-                        <h2>VIP Membership</h2>
-                        <h3>28.95€ / month</h3>
-                        <ul class="benefit">
-                            <li>Unlimited Access</li>
-                            <li>Try 3 days, free of charge</li>
-                            <li>Recurring conditions, 28.95 EUR monthly</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="ltpwragile_flickr_post_left desk_only">
-                    <img src="images/c4.jpg" alt=" " class="img-responsive">
-                </div>
-                <div class="ltpwragile_flickr_post_left desk_only">
-                    <img src="images/c2.jpg" alt=" " class="img-responsive">
+            <div class="ltpwragile_flickr_post_left payment">
+                <div class="extraCard">
+                    <img class="joystick" src="./images/joystick.svg" alt="">
+                    <h2>VIP Membership</h2>
+                    <h3>28.95€ / month</h3>
+                    <ul class="benefit">
+                        <li>Unlimited Access</li>
+                        <li>Try 3 days, free of charge</li>
+                        <li>Recurring conditions, 28.95 EUR monthly</li>
+                    </ul>
                 </div>
 
-
-                <div class="clearfix"> </div>
             </div>
+            <div class="ltpwragile_flickr_post_left desk_only">
+                <img src="images/c4.jpg" alt=" " class="img-responsive">
+            </div>
+            <div class="ltpwragile_flickr_post_left desk_only">
+                <img src="images/c2.jpg" alt=" " class="img-responsive">
+            </div>
+            <!--<div class="ltpwragile_flickr_post_left">
+                <a href="./game_info.html"><img src="images/ng4.jpg" alt=" " class="img-responsive"></a>
+            </div>
+            <div class="ltpwragile_flickr_post_left">
+                <a href="./game_info.html"><img src="images/ng5.jpg" alt=" " class="img-responsive"></a>
+            </div>-->
+
+            <div class="clearfix"> </div>
         </div>
+    </div>
         <div class="clearfix"> </div>
     </div>
 </div>
@@ -260,44 +245,44 @@
         <div class="col-md-5 footer-middle-ltpwr">
             <h4>Latest Games</h4>
             <div class="col-md-3 img-ltpwr-agile">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile footer-middle-wthree">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile footer-middle-wthree">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile footer-middle-wthree">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="col-md-3 img-ltpwr-agile footer-middle-wthree">
-                <a href="gamicloud_game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
+                <a href="./game_info.html"><img src="images/128x128.jpg" alt=" " /></a>
             </div>
             <div class="clearfix"></div>
         </div>
         <div class="col-md-4 footer-right-ltpwr">
-            <a href="gamicloud_index.html"><img src="./images/gamicloud_logo.png" alt=""></a>
+            <a href="index.html"><img src="./images/gamicloud_logo.png" alt=""></a>
             <p>Gamicloud is where the fun awaits! </p>
             <p class="agileinfo">Players from across the world and of appropriate age can indulge in the world of games!</p>
         </div>
         <div class="clearfix"></div>
         <div class="links">
-            <a href="gamicloud_contactus.html">Contact us</a>
-            <a href="./gamicloud_policy.html">Privacy Policy</a>
-            <a href="./gamicloud_terms.html">Terms &amp; Conditions</a>
-            <a href="./gamicloud_faq.html">FAQ</a>
-            <a href="./gamicloud_refund.html">Refund Policy</a>
-            <a href="./gamicloud_sub_gamicloud_terms.html">Subscription Terms</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="./policy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms &amp; Conditions</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./refund.html">Refund Policy</a>
+            <a href="./sub_terms.html">Subscription Terms</a>
         </div>
         <div class="copyright">
             <p>&copy; <script>document.write(new Date().getFullYear())</script> Gamicloud. All Rights Reserved</p>
@@ -313,5 +298,4 @@
 
 
 </script>
-
 </html>
