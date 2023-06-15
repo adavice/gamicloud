@@ -4819,3 +4819,62 @@ li>a {
 form .input {
 	border: 1px solid var(--bright) !important;
 }
+
+/*fixed images*/
+.main .view img {
+	display: block;
+	position: relative;
+	height: 160px;
+}
+
+.new_games .view img {
+	height: 340px;
+}
+
+img.img-responsive.zoom-img {
+	height: 160px;
+}
+
+@media screen and (max-width: 1000px) {
+	.main .view img {
+		height: 100px;
+	}
+
+	.new_games .view img {
+		height: 220px;
+	}
+
+	img.img-responsive.zoom-img {
+		height: 100px;
+	}
+
+	#gallery .new-grid-ltpwrl{
+		width: 29%;
+	}
+
+}
+
+@media screen and (max-width: 569px) {
+	.main .view img {
+		height: 160px;
+	}
+
+	.new_games .view img {
+		height: 200px;
+	}
+
+	img.img-responsive.zoom-img {
+		height: 200px;
+	}
+
+	#gallery .new-grid-ltpwrl{
+		width: 100%;
+		height: fit-content;
+	}
+}
+
+.cancel form span h4 {
+    padding-top: 10px !important;
+    color: red;
+    font-weight: bold;
+}
