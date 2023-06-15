@@ -44,7 +44,7 @@ div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.c
 .wpwl-group-submit.wpwl-clearfix  button {
     font-size: 16px;
     font-weight: 600;
-    background: var(--secondary);
+    background: var(--bright);
     color: var(--main-text);
     margin: 20px auto 30px;
     padding: 8px;
@@ -116,4 +116,9 @@ div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.c
 .wpwl-brand-card.wpwl-brand-custom.wpwl-brand-VISA{
     width: 79px;
     height: 39px;
+    margin-right: 0px;
+}
+
+.wpwl-brand-card.wpwl-brand-custom.wpwl-brand-MASTER{
+    margin: 0;
 }
