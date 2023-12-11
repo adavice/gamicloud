@@ -4878,3 +4878,19 @@ img.img-responsive.zoom-img {
     color: red;
     font-weight: bold;
 }
+
+.flex-block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.time-text{
+	color: var(--bright);
+}
+
+@media screen and (max-width: 569px) {
+	.flex-block {
+		gap: 20px;
+	}
+}
