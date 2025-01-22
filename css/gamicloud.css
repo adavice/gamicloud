@@ -4848,7 +4848,7 @@ img.img-responsive.zoom-img {
 		height: 100px;
 	}
 
-	#gallery .new-grid-ltpwrl{
+	#gallery .new-grid-ltpwrl {
 		width: 29%;
 	}
 
@@ -4867,16 +4867,16 @@ img.img-responsive.zoom-img {
 		height: 200px;
 	}
 
-	#gallery .new-grid-ltpwrl{
+	#gallery .new-grid-ltpwrl {
 		width: 100%;
 		height: fit-content;
 	}
 }
 
 .cancel form span h4 {
-    padding-top: 10px !important;
-    color: red;
-    font-weight: bold;
+	padding-top: 10px !important;
+	color: red;
+	font-weight: bold;
 }
 
 .flex-block {
@@ -4885,7 +4885,7 @@ img.img-responsive.zoom-img {
 	gap: 10px;
 }
 
-.time-text{
+.time-text {
 	color: var(--bright);
 }
 
@@ -4893,4 +4893,21 @@ img.img-responsive.zoom-img {
 	.flex-block {
 		gap: 20px;
 	}
+}
+
+/*payment fixes*/
+.container {
+	max-height: 100% !important;
+}
+
+div.wpwl-brand-custom {
+	background-image: url(../images/brand.png) !important;
+}
+
+.wpwl-brand-VISA {
+	background-position: 0 833px !important;
+}
+
+.wpwl-brand-MASTER {
+	background-position: 0 6022px !important;
 }
